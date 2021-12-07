@@ -32,9 +32,8 @@ void colorDetect(string path){
         Scalar lower(hmin,smin,vmin),upper(hmax,smax,vmax);
         inRange(imgHSV, lower, upper, mask);
         imshow("Masked", mask);
-//        imshow("Image Warped", imgHSV);
-//        imshow("Image ord", img);
+        imshow("Image Warped", imgHSV);
+        imshow("Image ord", img);
         waitKey(100);
     }
-    
 }
